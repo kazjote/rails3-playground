@@ -66,6 +66,7 @@ GEM
       rake (>= 0.8.7)
     gherkin (2.1.5)
       trollop (~> 1.16.2)
+    haml (3.0.17)
     i18n (0.4.1)
     json (1.4.6)
     json_pure (1.4.6)
@@ -77,6 +78,7 @@ GEM
       mime-types
       treetop (>= 1.4.5)
     mime-types (1.16)
+    nifty-generators (0.4.0)
     nokogiri (1.4.3.1)
     pickle (0.4.0)
       cucumber (>= 0.8)
@@ -145,7 +147,9 @@ DEPENDENCIES
   cucumber-rails
   database_cleaner
   factory_girl
+  haml
   launchy
+  nifty-generators
   pickle
   rails (= 3.0.0.rc)
   rspec-rails (>= 2.0.0.beta.19)

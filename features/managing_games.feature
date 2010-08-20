@@ -3,7 +3,7 @@ Feature: Managing the games
   User should be able to choose game matching his interests
   
   Scenario: Browsing the games
-    Given a game exists
+    Given a game exists with name: "first game"
     When I am on the games page
-    And I follow "first game"
-    Then I should see "Welcome to the 'first game'!"
+    And I follow "Edit"
+    Then I should see "Edit Game"
