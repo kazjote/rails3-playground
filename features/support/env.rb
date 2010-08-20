@@ -56,3 +56,7 @@ if defined?(ActiveRecord::Base)
   rescue LoadError => ignore_if_database_cleaner_not_present
   end
 end
+
+Before do
+  CouchRest.database('http://localhost:5984/rails3-playground').recreate! rescue nil 
+end

@@ -30,6 +30,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'cucumber-rails'
   gem 'cucumber'
+  gem 'pickle'
   gem 'spork'
   gem 'launchy'
   gem 'rspec-rails', ">= 2.0.0.beta.19"
