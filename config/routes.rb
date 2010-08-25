@@ -56,5 +56,8 @@ Rails3Playground::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
 
-  resources :games
+  resources :games do |games|
+    resources :characters
+  end
 end
+
