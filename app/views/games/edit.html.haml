@@ -6,3 +6,8 @@
   = link_to "Show", game_path(@game)
   |
   = link_to "View All", games_path
+
+%ul
+  %h2 Characters
+  - @game.characters.each do |character|
+    %li= character.name

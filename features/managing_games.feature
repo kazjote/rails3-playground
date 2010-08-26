@@ -22,3 +22,10 @@ Feature: Managing the games
     And I follow "Destroy"
     Then I should see "Successfully destroyed game."
     And I should not see "first game"
+
+  Scenario: Editing the game
+    Given a character exists with name: "Mario"
+    When I am on the games page
+    And I follow "Edit"
+    Then I should see "Mario"
+
